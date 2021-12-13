@@ -1,0 +1,47 @@
+<!--
+<div class="toolbar" role="banner">
+ 
+
+logo added above ....bg-primary-->
+<body style="background-color:rgb(247, 243, 240);">
+<nav class="navbar navbar-expand-sm  navbar-dark"  style="background-color:rgb(240, 218, 202);">   
+  <!-- Links -->
+
+  <img
+    width="80"
+    alt="Customer Bank Logo"
+    src="assets\img\banklogo.png"
+  />
+
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <b>  <a routerLink="customers" class="nav-link" routerLinkActive="active" style="color:rgb(51, 24, 24)">Customer Producer</a> </b>
+    </li>
+    <li class="nav-item">
+     <b> <a routerLink="consumers" class="nav-link" routerLinkActive="active" style="color:rgb(51, 24, 24)">Customer Consumer</a> </b>
+  </li>
+    <li class="nav-item">
+   <b>   <a routerLink="add" class="nav-link" routerLinkActive="active" style="color:rgb(51, 24, 24)">Add Customer</a> </b>
+  </li>
+  </ul>
+</nav>
+
+
+<div class="container">
+  <br>
+  <h2 style="text-align: center;color:darkolivegreen;">{{title}}</h2>
+  <hr>  
+  <div class="card">
+    <div class="card-body">
+  <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <span>All Rights Reserved </span>
+  </div>
+</footer>
+
+</body>
